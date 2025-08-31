@@ -12,21 +12,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building the application..."
-                sh 'mvn clean install -DskipTests'
+                bat 'mvn clean install -DskipTests'
             }
         }
 
         stage('Test') {
             steps {
                 echo "Running tests..."
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
 
         stage('Cleanup') {
             steps {
                 echo "Cleaning up temporary files..."
-                sh 'mvn clean'
+                bat 'mvn clean'
             }
         }
     }
@@ -44,3 +44,4 @@ pipeline {
         }
     }
 }
+
