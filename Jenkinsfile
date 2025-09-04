@@ -25,6 +25,13 @@ pipeline {
             }
         }
 
+        stage('Deploy') {
+            steps {
+                echo "Deploying the application..."
+                bat 'echo Deploying my-app.jar to target environment'
+            }
+        }
+
         stage('Cleanup') {
             steps {
                 echo "Cleaning up temporary files..."
@@ -44,6 +51,5 @@ pipeline {
             echo "Pipeline finished. Cleaning workspace..."
             cleanWs()
         }
-    }
+    }  
 }
-
