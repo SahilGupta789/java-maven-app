@@ -1,4 +1,4 @@
-package com.mycompany;
+package com.mycom;
 public class App {
 
     private static final String MESSAGE = "Hello World!";
