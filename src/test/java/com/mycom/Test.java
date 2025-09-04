@@ -2,7 +2,7 @@ package com.mycom;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Test
+public class AppTest 
 {
     @Test
     public void testAppConstructor() {
